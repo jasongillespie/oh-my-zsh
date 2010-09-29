@@ -1,18 +1,10 @@
 # Aliases
-alias g='git'
-alias gst='git status'
-alias gl='git pull'
-alias gup='git fetch && git rebase'
+alias g="git status"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push'
-alias gd='git diff | mate'
-alias gdv='git diff -w "$@" | vim -R -'
-alias gc='git commit -v'
-alias gca='git commit -v -a'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gcount='git shortlog -sn'
-alias gcp='git cherry-pick'
-
+alias gup='git fetch && git rebase'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
