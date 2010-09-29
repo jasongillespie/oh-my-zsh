@@ -1,9 +1,3 @@
-# New Projects and Work Tasks
-alias newproject="sh $ZSH/custom/newProject.sh"
-alias newee="sh $ZSH/custom/newProjectEE.sh"
-alias newee2="sh $ZSH/custom/newProjectEE2.sh"
-alias arin="whois -h whois.arin.net "
-
 # Database tools
 alias dbbackup="sh $ZSH/custom/dbbackup.sh"
 alias dbimport="sh $ZSH/custom/dbimport.sh"
@@ -17,9 +11,6 @@ alias fc="dscacheutil -flushcache"
 cdw() { cd /var/www/$1 };
 alias cdd="cd ~/Development/"
 alias cde="cd ~/Development/ExpressionEngine/"
-
-# Homebrew Aliases
-alias brewupdate="brew update && brew install `brew outdated`"
 
 # Subversion Aliases
 alias removesvn="find . -name \".svn\" -exec rm -rf {} \;"
