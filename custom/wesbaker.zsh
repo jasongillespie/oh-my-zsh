@@ -26,3 +26,5 @@ alias removesvn="find . -name \".svn\" -exec rm -rf {} \;"
 
 # ExpressionEngine Aliases
 alias eepermissions="sudo chmod 666 manage/expressionengine/config/{config.php,database.php} && sudo chmod -R 777 manage/expressionengine/cache && sudo chmod -R 777 manage/expressionengine/templates && sudo chmod -R 777 images"
+
+export EDITOR="vim"
