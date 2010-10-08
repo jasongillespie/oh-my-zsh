@@ -2,9 +2,7 @@
 alias g="git status"
 alias gaa="git add ."
 alias gc="git commit -m"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gp='git push'
-alias gup='git fetch && git rebase'
+alias gl="git lg"
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'

@@ -9,7 +9,7 @@ alias dbbackup="sh $ZSH/custom/dbbackup.sh"
 alias dbimport="sh $ZSH/custom/dbimport.sh"
 
 # Terminal Utilities
-alias ae="mate -w $ZSH/custom/wesbaker.zsh && source ~/.zshrc"
+alias ae="mate -w $ZSH/custom/wesbaker.zsh $ZSH/plugins/*.zsh && source ~/.zshrc"
 alias l="ls -lhp"
 alias fc="dscacheutil -flushcache"
 
