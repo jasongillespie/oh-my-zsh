@@ -14,7 +14,10 @@ alias l="ls -lhp"
 alias fc="dscacheutil -flushcache"
 
 # Directory Assistance
+_cdw () { reply=(`find /var/www/* -type d -maxdepth 0 | sed 's/\/var\/www\///'`) }
 cdw() { cd /var/www/$1 };
+compctl -K _cdw cdw
+
 alias cdd="cd ~/Development/"
 alias cde="cd ~/Development/ExpressionEngine/"
 
@@ -28,4 +31,10 @@ alias removesvn="find . -name \".svn\" -exec rm -rf {} \;"
 alias eepermissions="sudo chmod 666 manage/expressionengine/config/{config.php,database.php} && sudo chmod -R 777 manage/expressionengine/cache && sudo chmod -R 777 manage/expressionengine/templates && sudo chmod -R 777 images"
 
 export EDITOR="vim"
-export PATH=$PATH:~/bin:/usr/local/mysql/bin/:/opt/local/bin:/opt/local/sbin:/usr/local/sbin
+export PATH=/usr/local/bin:$PATH:~/bin:/usr/local/mysql/bin/:/opt/local/bin:/opt/local/sbin:/usr/local/sbin
+
+# Speed up ZSH completion
+# http://lethalman.blogspot.com/2009/10/speeding-up-zsh-completion.html
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
